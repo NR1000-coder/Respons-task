@@ -198,4 +198,37 @@ a:hover {
   #third .circle:hover {
     border-radius: 40px;
   }
+}
+#fourth {
+  padding: 40px;
+}
+#fourth .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  border: 1px solid #476a8b;
+  background-color: #476a8b;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700px;
+}
+
+#last {
+  padding: 40px;
+}
+#last .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  border: 1px solid #7a9f6e;
+  background-color: #7a9f6e;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700px;
 }/*# sourceMappingURL=style.css.map */
