@@ -10,46 +10,15 @@ a:hover {
   color: black;
 }
 
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #4a7a8e;
-  background-color: #5183a7;
-  height: 250px;
-  width: 250px;
-  margin-top: 50px;
-}
-.box .minibox {
-  border: 1 px solid #345880;
-  background-color: #345880;
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
-  transition: 2s;
-}
-.box .minibox:hover {
-  height: 180px;
-  width: 180px;
-}
-
-@media screen and (min-width: 770px) {
+@media screen and (max-width: 770px) {
   .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 3px solid #4a7a8e;
     background-color: #5183a7;
-    height: 250px;
-    width: 250px;
-    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
   }
-  .minibox {
+  .box .minibox {
     border: 1 px solid #345880;
     background-color: #345880;
     height: 100px;
@@ -57,12 +26,48 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
     transition: 2s;
   }
-  .minibox:hover {
+  .box .minibox:hover {
+    height: 160px;
+    width: 160px;
+  }
+  .second {
+    position: absolute;
+    top: 200px;
+  }
+  .third {
+    position: absolute;
+    top: 400px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .box {
+    border: 3px solid #4a7a8e;
+    background-color: #5183a7;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .box .minibox {
+    border: 1 px solid #345880;
+    background-color: #345880;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    transition: 2s;
+  }
+  .box .minibox:hover {
     height: 180px;
     width: 180px;
   }
